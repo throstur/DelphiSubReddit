@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.427,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\uMain.dfm=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.085,=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.771,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\uFetchJson.pas=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit_FetchJson.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.998,=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.419,=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.535,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\uFetchReddit.pas=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\uFetchJson.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.832,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit_FetchJson.pas=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.427,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\uMain.pas=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025.10.30 20:11:18.769,=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025.10.30 20:11:37.397,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\uSubReddit.pas=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025.10.30 21:56:52.981,=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025.10.30 21:57:48.700,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\uSubRedditPost.pas=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025.10.30 23:41:33.533,C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\DelphiSubReddit.dproj=C:\Users\Throstur\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

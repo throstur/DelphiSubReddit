@@ -33,7 +33,7 @@ var
   i: Integer;
   NewNode: TTreeNode;
 begin
-  NewNode := TreeView_Posts.Items.AddChild(ParentNode, Format('%s  - %s', [Post.Title, Post.Author]));
+  NewNode := TreeView_Posts.Items.AddChild(ParentNode, Format('%s  - %s  %d  (u:%d d:%d)', [Post.Title, Post.Author, Post.Score, Post.Ups, Post.Downs]));
 end;
 
 procedure TMainForm.Button_LoadClick(Sender: TObject);
@@ -45,7 +45,7 @@ begin
   TreeView_Posts.Items.AddFirst(TreeView_Posts.Items.GetFirstNode, Format('r/Delphi: %d posts', [Length(SubReddit.Posts)]));
   for Post in SubReddit.Posts do
     begin
-      AddPostNode(TreeView_Posts.GetNodeAt(1, 0), Post);
+      AddPostNode(TreeView_Posts.Items.GetFirstNode, Post);
     end;
 end;
 

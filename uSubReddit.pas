@@ -32,7 +32,7 @@ procedure TSubReddit.Fetch(After: string; Limit: integer; SubReddit: string);
 begin
   with TFetchReddit.Create do
   begin
-    ParseJSON(FetchThreads(After, Limit, SubReddit));
+    ParseJSON(FetchPosts(After, Limit, SubReddit));
     Free;
   end;
 end;
@@ -61,7 +61,7 @@ begin
           SubRedditPost.NumComments := JSONPost.GetValue<integer>('data.num_comments');
           SubRedditPost.Score := JSONPost.GetValue<integer>('data.score');
           SubRedditPost.Ups := JSONPost.GetValue<integer>('data.ups');
-          SubRedditPost.Downs := JSONPost.GetValue<integer>('data.ups');
+          SubRedditPost.Downs := JSONPost.GetValue<integer>('data.downs');
           LastName := JSONPost.GetValue<string>('data.name');
 
           i := Length(Posts);

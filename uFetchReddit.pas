@@ -15,12 +15,12 @@ type
   private
     const SubReddit_API_URI = 'https://www.reddit.com/r/%s/.json?limit=%d&after=%s';
   public
-    function FetchThreads(After: string; Limit: integer; SubReddit: string): string;
+    function FetchPosts(After: string; Limit: integer; SubReddit: string): string;
 end;
 
 implementation
 
-function TFetchReddit.FetchThreads(After: string; Limit: integer; SubReddit: string): string;
+function TFetchReddit.FetchPosts(After: string; Limit: integer; SubReddit: string): string;
 var
   URI: string;
 begin

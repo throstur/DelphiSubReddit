@@ -10,6 +10,7 @@ type
   TMainForm = class(TForm)
     Button_Load: TButton;
     TreeView_Posts: TTreeView;
+    ComboBox_Limit: TComboBox;
     procedure Button_LoadClick(Sender: TObject);
 
   private
@@ -54,7 +55,7 @@ var
   Post: TSubRedditPost;
   PostNode: TTreeNode;
 begin
-  SubReddit.Populate;
+  SubReddit.Populate(ComboBox_Limit.Items[ComboBox_Limit.ItemIndex].ToInteger());
   TreeView_Posts.Items.Clear;
   TreeView_Posts.Items.AddFirst(TreeView_Posts.Items.GetFirstNode, Format('r/Delphi: %d posts', [Length(SubReddit.Posts)]));
   for Post in SubReddit.Posts do

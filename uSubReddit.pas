@@ -24,7 +24,7 @@ type
 
   public
     Posts: TArray<TSubRedditPost>;
-    procedure Populate;
+    procedure Populate(Limit: integer);
 
 end;
 
@@ -136,12 +136,10 @@ begin
 end;
 
 
-procedure TSubReddit.Populate;
+procedure TSubReddit.Populate(Limit: integer);
 var
-  Limit: integer;
   i: integer;
 begin
-  Limit := 2;
   with TFetchReddit.Create do
   begin
     ParseJSONPost(FetchPosts(LastName, Limit, 'delphi'));

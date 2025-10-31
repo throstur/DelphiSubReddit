@@ -28,4 +28,22 @@ object MainForm: TMainForm
     Indent = 19
     TabOrder = 1
   end
+  object ComboBox_Limit: TComboBox
+    Left = 97
+    Top = 8
+    Width = 40
+    Height = 23
+    ItemIndex = 2
+    TabOrder = 2
+    Text = '3'
+    Items.Strings = (
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8')
+  end
 end

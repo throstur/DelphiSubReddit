@@ -13,9 +13,11 @@ uses
 type
   TFetchReddit = class
   private
-    const SubReddit_API_URI = 'https://www.reddit.com/r/%s/.json?limit=%d&after=%s';
+    const Reddit_URI = 'https://www.reddit.com';
+    const SubReddit_URI = Reddit_URI + '/r/%s/.json?limit=%d&after=%s';
   public
     function FetchPosts(After: string; Limit: integer; SubReddit: string): string;
+    function FetchComments(PermaLink: string; NumComments: integer): string;
 end;
 
 implementation
@@ -24,12 +26,22 @@ function TFetchReddit.FetchPosts(After: string; Limit: integer; SubReddit: strin
 var
   URI: string;
 begin
-  URI := Format(SubReddit_API_URI, [SubReddit, Limit, After]);
+  URI := Format(SubReddit_URI, [SubReddit, Limit, After]);
 
   with THTTPClient.Create do
     begin
       ResponseTimeout := 1500;
       Result := Get(URI).ContentAsString;
+      Free
+    end;
+end;
+
+function TFetchReddit.FetchComments(PermaLink: string; NumComments: integer): string;
+begin
+  with THTTPClient.Create do
+    begin
+      ResponseTimeout := 1500;
+      Result := Get(Reddit_URI + PermaLink + '.json?limit=' + NumComments.ToString).ContentAsString;
       Free
     end;
 end;

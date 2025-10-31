@@ -5,7 +5,8 @@ uses
   uMain in 'uMain.pas' {MainForm},
   uFetchReddit in 'uFetchReddit.pas',
   uSubReddit in 'uSubReddit.pas',
-  uSubRedditPost in 'uSubRedditPost.pas';
+  uSubRedditPost in 'uSubRedditPost.pas',
+  uSubRedditComment in 'uSubRedditComment.pas';
 
 {$R *.res}
 

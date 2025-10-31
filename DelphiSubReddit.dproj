@@ -130,6 +130,7 @@
         <DCCReference Include="uFetchReddit.pas"/>
         <DCCReference Include="uSubReddit.pas"/>
         <DCCReference Include="uSubRedditPost.pas"/>
+        <DCCReference Include="uSubRedditComment.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

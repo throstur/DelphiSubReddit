@@ -1,20 +1,15 @@
-unit uSubRedditPost;
+unit uSubRedditComment;
 
 interface
 
-uses
-  uSubRedditComment;
-
 type
-  TSubRedditPost = record
+  TSubRedditComment = record
     Id: string;
     Name: string;
-    Title: string;
-    SelfText: string;
+    Body: string;
     Author: string;
     CreatedUtc: double;
     PermaLink: string;
-    NumComments: integer;
     Score: integer;
     Ups: integer;
     Downs: integer;
